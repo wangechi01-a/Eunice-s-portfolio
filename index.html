@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunice Muriithi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://kit.fontawesome.com/8a6f673640.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MYlogo5.JPG" class="logo" alt="Eunice's logo"> <!-- mmm-->
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a> </li>
+                    <li> <a href="#about">Summary</a> </li>
+                    <li> <a href="#services">Services</a> </li>
+                    <li> <a href="#My_Projects"> Work-Samples</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"> </i> <!--- an icon for Closing---->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"> </i> <!-- Hamburger Icon for menu-->
+            </nav>
+            <div class="header-text">
+                <h1>Data Scientist || Machine Learning Engineer</h1>
+                <p>Greetings! I am <span>Eunice Muriithi</span>, a skilled professional <br> with expertise in
+                    Data Science, Machine Learning and Business Development.</p>
+            </div>
+        </div>
+    </div>
+    <!--the About section starts below-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Eunice-dp-specs.JPG" size="" alt="my photo">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title"> Professional Summary</h2>
+                    <p>
+                        I am a highly skilled Data Scientist and ML Engineer with expertise in AI, geospatial analytics, and predictive modeling across industries. 
+                        I develop and deploy ML models using PyTorch, Scikit-learn, and Transformers, specializing in geospatial analysis, NLP, computer vision, and 
+                        time-series forecasting. I manage the full ML pipeline, ensuring scalable AI solutions with MLOps and cloud deployment. Strong problem-solver 
+                        with a proven ability to collaborate with cross-functional teams and translate business challenges into AI-driven insights
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!--content For the skills part below-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            </li>
+                            <li><span>Data Science</span> <br> I am a skilled data Scientist specializing in AI, machine learning, and predictive modeling, with expertise in NLP, computer vision, and geospatial analytics.
+                                Proficient in Python, SQL, and AWS, I develop and deploy scalable AI solutions using PyTorch, TensorFlow, and Scikit-learn. 
+                                I have applied AI-driven innovation across sustainable industries, leveraging big data, automation, and MLOps for business impact.</li>
+                        </ul>
+                    </div>
+
+                    <!--content For the Experience part below-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> <b>January 2024- Present</span> <br> Competitive Data Scientist and Machine Learning Engineer at Zindi</b>
+                            </li>
+                            <p>
+                                <li>❄ Developed predictive model that improved air pollution forecasting accuracy by 30%, 
+                                    enabling governments and organizations to implement proactive measures to reduce health risks.</li>
+                                <li>❄ Built machine learning model that increased tourism demand prediction accuracy by 25%, 
+                                    aiding policymakers and businesses in resource allocation and marketing strategies in Tanzania.</li>
+                                <li>❄ Created a data-driven pollution monitoring system that enhanced urban air quality predictions by 28%, 
+                                    allowing authorities to implement targeted interventions for cleaner cities.</li>
+                                <li>❄ Designed an anomaly detection system that identified fraudulent energy consumption helping utility 
+                                    companies reduce revenue losses and ensure fair billing.</li>
+                            </p>
+
+
+                            <li><span><b>September 2024- January 2025</span> <br> Machine Learning Engineer at Invisible Technologies</b>
+                            </li>
+                            <p>
+                                <li>🚀Improved annotation efficiency by 40% through the implementation of automated data labeling pipelines, 
+                                    enhancing training data quality for AI models.</li>
+                                <li>🚀Built predictive models, enhancing forecasting accuracy by 25% for decision-making</li>
+                                <li>🚀Trained NLP models, improving text classification accuracy by 15% for AI automation
+                                </li>
+                                <li>🚀Collaborated with cross-functional teams to streamline AI workflows, 
+                                    improving overall project delivery efficiency.</li>
+                            </p>
+
+                            <li><span><b>August 2024- October 2024</span> <br> Data Analysis Tutor(python) at Lux Academy</b>
+                            </li>
+                            <p>
+                                <li>🚀Trained 120+ students in Python for data analysis, machine learning, and visualization, achieving a 90% course completion rate..</li>
+                                <li>🚀Designed coding challenges and assessments that led to a 95% improvement in Python proficiency scores post-training.</li>
+                                <li>🚀Led interactive workshops on data wrangling, feature engineering, and exploratory data analysis, ensuring hands-on mastery.</li>
+                                <li>🚀Guided 120+ learners through real-world projects, with 80% successfully applying their skills in jobs or career advancements.</li>
+                            </p>
+
+                            <li><span><b>June 2024-July 2024</span> <br> Machine Learning Engineer Intern at CodSoft</b> </li>
+                            <p>
+                                <li>🧿 Developed predictive models, improving market trend forecasting
+                                    by 30% and increasing financial performance by 12%</li>
+                                <li>🧿  Improved fraud detection models with data preprocessing and feature engineering in Python, significantly enhancing detection
+                                    accuracy by uncovering fraud trends through visualizations.</li>
+                                <li>🧿 Developed credit scorecards using logistic regression, XGBoost, and LightGBM, increasing prediction accuracy by 25%.</li>
+                                <li>🧿 Conducted various code reviews and testing to ensure high-quality deliverables.</li>
+
+                            </p>
+
+                            <li><span> <b>May 2023 - August 2023</span> <br> ICT Support Intern at Jomo Kenyatta International Airport </b> </li>
+                            <p>
+                            <ul>
+                                <li>⭕ Managed ICT support services for over 200 users, troubleshooting and resolving technical issues to ensure smooth
+                                    operations.
+                                    </li>
+                                <li>
+                                    ⭕ Ensured uninterrupted Wi-Fi and LAN connectivity for over 10,000
+                                    passengers daily, optimizing network performance and reducing
+                                    downtime by 30%.</li>
+                                <li>⭕ Administered Flight Information System Display (FIDS) at JKIA, ensuring
+                                    seamless information flow across various points
+                                    .</li>
+                                <li>⭕Provided on-site and remote support, handling 50+ IT requests per week,
+                                    significantly improving operational efficiency across all airport
+                                    departments.</li>
+                            </ul>
+                            </p>
+                        </ul>
+                    </div>
+
+                    <!--content For the Education part below-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> Jan 2024 - June 2024<span> <br> BootCamp in Data Science and Artificial Intelligence, from Ngeni Labs.
+                            <li><span>Sep 2019 - Oct 2023</span> <br> Bachelor's Degree in Business Information Technology, from Multimedia
+                                University of Kenya.</li>
+                            <li><span>2015 - 2018</span> <br> Attained the High School Diploma
+                                (KCSE), Mutira Girls High School</li>
+
+                        </ul>
+                    </div>
+
+                    <!-- End of tabs for skills, experience, education, and other certs-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----the My Services section starts below--------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <!-- service 1 starts with the div below-->
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Data Science</h2>
+                    <p>
+                        Experienced in building data-driven solutions using Python, SQL, and machine learning frameworks like Scikit-learn, TensorFlow, and PyTorch. 
+                        Skilled in data analysis, predictive modeling, NLP, and computer vision, with expertise in deploying models using Flask, FastAPI, and cloud platforms. 
+                        Proficient in ETL processes, data visualization, and working with APIs for seamless data integration. Strong knowledge of Git for version control and collaborative development.
+                    </p> <!--description of the service 1-->
+                    <a href="https://docs.google.com/document/d/1FhhUMvL_ABMhLJ5PPSSXeoN2hv6HT6RDc2JfhNAl4IM/edit?usp=sharing"
+                        target="_blank"> Learn
+                        More </a>
+                </div> <!--my service one ends here-->
+
+                <!-- service 2 starts with the div below-->
+                <div>
+                    <i class="fa-brands fa-space-awesome"></i>
+                    <h2>AI Specialist</h2>
+                    <p>
+                        I leverage my expertise in AI technologies to analyze business needs and workflows, identifying opportunities
+                        where AI can drive efficiency, productivity, and cost savings. Beyond just recommending AI adoption,
+                        I design and build tailored AI solutions that seamlessly integrate into business operations, ensuring practical and impactful
+                        implementation.
+                    </p> <!--description of the service 2-->
+                    <a href="https://docs.google.com/document/d/1FhhUMvL_ABMhLJ5PPSSXeoN2hv6HT6RDc2JfhNAl4IM/edit?usp=sharing" target="_blank">Learn More</a>
+                </div>
+                <!--my service two ends here-->
+            </div>
+        </div>
+    </div>
+
+    <!-- -----the My_Projects Section starts below--------------------------- -->
+    <section class="projectsSection">
+        <div id="My_Projects">
+            <div class="container">
+                <h1 class="sub-title">Checkout my Project Samples</h1>
+                <div class="work-list">
+                    <!--work sample 1 below-->
+                    <div class="work">
+                        <img src="images/linkedin.png">
+                        <div class="layer">
+                            <h3>Linkedin Post-Pro</h3>
+                            <p>
+                                Designed and developed a platform to generate professional LinkedIn posts in English and Swahili fostering networking
+                                and knowledge-sharing across diverse communities. This tool helps users craft engaging posts on various topics, 
+                                ensuring linguistic inclusivity and improving LinkedIn engagement.
+                            </p>
+                            <a href="https://github.com/wangechi01-a/LinkedIn-Post-Pro" 
+                                target="_blank"> 
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                            <!--No text in this link, just an icon from fontawesome-->
+
+                        </div>
+                    </div>
+
+
+                    <!--work sample 3 below-->
+                    <div class="work">
+                        <img src="images/tanzania.png" />
+                        <div class="layer">
+                            <h3>Tanzania Tourism Trend Prediction</h3>
+                            <p>
+                                Developed a machine learning model to predict tourist spending in Tanzania, 
+                                aiding tour operators and the Tanzania Tourism Board in providing cost estimates for travelers.
+                            </p>
+                            <a href="https://github.com/wangechi01-a/Tanzania-Tourism-Prediction/blob/main/tanzania-tourism-prediction.ipynb"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 9 below-->
+                    <div class="work">
+                        <img src="images/myjobmag.png" />
+                        <div class="layer">
+                            <h3>MyJobMag Kenya Web_scrapping Job Listings</h3>
+                            <p>
+                                This project is a web scraper that extracts job postings from online boards
+                                and sends automated email alerts, streamlining job searches.
+                            </p>
+                            <a href="https://github.com/wangechi01-a/Data-Jobs-listing-in-Nairobi-Kenya-from-My-JobMag-Kenya-Website/blob/main/My%20JobMag%20Kenya%20Jobs.ipynb" 
+                            target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 9.1 below-->
+                    <div class="work">
+                        <img src="images/agrismart-f.png" />
+                        <div class="layer">
+                            <h3>AgriSmart Project</h3>
+                            <p> This is an AI driven agricultural solution that provides farmers with
+                                data-driven insights to improve crop yields, optimize resource use, and enhance sustainability. 
+                                By leveraging machine learning, it offers tailored recommendations for better farm management and productivity.</p>
+                            <a href="https://github.com/wangechi01-a/AgriSmart" 
+                            target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 9.2 below-->
+                    <div class="work">
+                        <img src="images/pdf-bot.png" />
+                        <div class="layer">
+                            <h3>Ask Your Pdf</h3>
+                            <p>Developed a chatbot that allows users to query PDF documents using natural language, 
+                                instantly retrieving relevant information and summaries from your document.</p>
+                            <a href="https://github.com/wangechi01-a/Ask-Your-Pdf"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+                    <!--work sample 9.3 below-->
+                    <div class="work">
+                        <img src="images/medical-bot.png" />
+                        <div class="layer">
+                            <h3>Medical Chatbot</h3>
+                            <p>This is chatbot that answers general medical questions, 
+                                providing users with quick, reliable health information based on trusted medical sources.</p> 
+                              
+                            <a href="https://github.com/wangechi01-a/Medical-Chatbot" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+
+                    <!--work sample 3.2 below-->
+                    <div class="work">
+                        <img src="images/air-quality.png" />
+                        <div class="layer">
+                            <h3>
+                                AirQo-African-Air-Quality 
+                            </h3>
+                            <p>
+                                This project uses machine learning to estimate PM2.5 levels from satellite data, 
+                                improving air quality predictions across African cities. By integrating satellite and ground 
+                                sensor data, it enhances monitoring, supports public health, and informs policy decisions.
+                            </p>
+                            <a href="https://github.com/wangechi01-a/AirQo-African-Air-Quality/blob/main/airqo_african_air_quality.ipynb"
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--work sample 3.3 below-->
+                    <div class="work">
+                        <img src="images/warehouse.png" />
+                        <div class="layer">
+                            <h3>Real-Time Vendor Tracking</h3>
+                            <p>
+                                This project is a system for tracking vendor products in a warehouse using object detection and video analytics. 
+                                It monitors items like barrels, pallets, and forklifts in real time, improving inventory management, reducing errors, 
+                                and optimizing logistics.
+                            </p>
+                            <a href="https://github.com/wangechi01-a/Real-Time-Vendor-Product-Tracking-with-AI."
+                                target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <!--No text in this link, just an icon from fontawesome-->
+                        </div>
+                    </div>
+
+                    <!--Work samples end here -->
+
+                    <!-- Work Samples for page 1 end here-->
+
+                </div>
+                <a href="work-samples.html" name="more-work-samples" id="more-work-samples" target="_blank"><button
+                        class="bn632-hover bn23">See All Projects</button></a>
+                <!-- How to link to the external page with samples:
+                <a href="somewhere. html" name="linktome" id="linktome" target="_blank">Go Somewhere</a>
+            -->
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials Section-->
+    <section class="testimonials" id="testimonials-section">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="title"> Client Testimonials </h2>
+            </div>
+
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+
+                    <div class="swiper-wrapper">
+                        <!--Client 1-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/otieno.jpeg" alt="client1 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">James Otieno</h3>
+                                    <span class="job">Startup Founder</span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    "Our product recommendation system became more personalized and effective after Eunice optimized it using machine learning. 
+                                    Her ability to analyze customer behavior and fine-tune recommendations led to higher engagement and increased sales. 
+                                    I highly recommend her for data-driven business solutions!"
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!-- Client 2-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/david.jpeg" alt="client2 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">David Johnson</h3>
+                                    <span class="job">CTO, Logistics Automation
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    "Eunice developed a real-time object detection system for our warehouse, 
+                                    enabling accurate tracking of inventory and equipment. Her implementation improved operational 
+                                    efficiency by reducing errors in product handling and optimizing workflow. The speed and precision of the system made a huge difference
+                                    in our logistics management. I would not hesitate to collaborate with her again."
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!--Client 3-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/emma.jpeg" alt="client3 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">Emma Schneider</h3>
+                                    <span class="job">AI Researcher, Healthcare Technology</span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                    "The healthcare diagnostics system we built achieved greater accuracy and efficiency with Eunice's contributions. 
+                                    Her deep learning expertise helped refine disease detection, leading to faster and more reliable results. 
+                                    I strongly recommend her for any healthcare technology projects!"
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!--Client 4-->
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="images/oliver.jpeg" alt="client4 testimonial">
+                                <div class="text-box">
+                                    <h3 class="name">Oliver Carter</h3>
+                                    <span class="job">Startup Founder</span>
+                                </div>
+                            </div>
+                            <div class="clientComment">
+                                <p>
+                                "Enhancing our customer service with a virtual assistant made a huge difference, and Eunice was behind its success. 
+                                Her expertise in chatbot development and data processing streamlined inquiries, improved response times, and elevated user experience. 
+                                I highly recommend her for building intelligent and user-friendly solutions!"
+                                </p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <!--Client 5-->
+
+                    </div>
+                    <!--End of testimonials swiper wrapper-->
+                    <div
+                        class="swiper-pagination js-testimonials-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                        <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 1"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                            aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet"
+                            tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                            class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 4"></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Testimonials Section ends here-->
+
+    <!--Contact section starts below-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"> <!--here we shall have my contact details plus social media handles-->
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>wangechieunice0@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+254 769015691</p>
+
+                    <p class="connectWithMe">Connect with me on all platforms below:</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/eunice-muriithi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwZ6ut2hySHGJYPyJsjdf2A%3D%3D"
+                            target="blank">
+                            <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://twitter.com/wangeshie" target="blank"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/wangeshie_/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_wangeshie_/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://discordapp.com/users/961452033288843284" target="_blank"><i
+                                class="fa-brands fa-discord"></i> </a>
+                        <a href="https://www.tiktok.com/@codewith_wangeshie?is_from_webapp=1&sender_device=pc"
+                            target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        </p>
+                    </div>
+                    <!-- <a href="images/@Eunice Muriithi Resume.pdf" download class="bn5"> <i
+                            class="fa-solid fa-cloud-arrow-down"></i>Download my Resume/CV</a>
+                            -->
+                    <a href="https://wa.me/+254769015691" target="_blank" class="bn5">
+                        <i class="fa-brands fa-square-whatsapp"></i> Click to chat me on WhatsApp </a>
+                    <!-- Replaced my CV here-->
+                </div>
+
+                <div class="contact-right">
+                    <!--Here we shall have the are where a client can reach out to me from the website-->
+                    <p>You can also contact me by filling out this form:</p>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="enter your email" required>
+                        <textarea name="message" rows="9" placeholder="Type your message here"></textarea>
+                        <button type="submit" class="submitbtn">Submit</button>
+                    </form>
+                    <!--we will display one message below, usinf this code below...-->
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Contact division Id ends here-->
+
+    <!--copyright section starts below-->
+    <div class="copyright">
+        <p>Copyright&copy;Eunice Muriithi</p>
+    </div>
+
+
+    <!--footer section starts below-->
+    <footer>
+
+    </footer>
+
+    <!--
+    <button type="button" onclick="alert(Date())"> Click here to display Date and Time now </button>
+    -->
+    <!--This is a button which displays current date and time-->
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        //testimonials js
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween: 30,
+            loop: true, // Enables continuous loop mode
+            autoplay: {
+                delay: 10000, // 10 seconds delay
+                disableOnInteraction: false, // Allows autoplay even after user interaction
+            },
+            pagination: {
+                el: '.js-testimonials-pagination',
+                clickable: true,
+            },
+            slidesPerView: 1, // Shows one slide at a time by default
+
+            breakpoints: {
+                767: {
+                    slidesPerView: 2, // Show 2 slides on screens larger than 767px
+                },
+                1024: {
+                    slidesPerView: 3, // Show 3 slides on screens larger than 1024px
+                }
+            },
+
+            // Enable slide transition effect
+            effect: 'slide', // Slide transition effect
+            speed: 800, // Transition speed (in milliseconds)
+        });
+
+        //end of testimonials js
+    </script>
+
+
+</body>
+
+</html>
