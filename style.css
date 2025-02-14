@@ -335,6 +335,44 @@ margin:10px 0;
     background-color: green;
 }
 
+/* work starts here */
+.work {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust width as needed */
+    overflow: hidden;
+}
+
+.layer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.layer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.layer p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.layer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.layer a:hover {
+    color: #ffcc00; /* Optional hover effect */
+}
+
 
 /* ....... Styling the Services section starts below.........*/
 #services{
