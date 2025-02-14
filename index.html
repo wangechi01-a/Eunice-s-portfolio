@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+
     <script src="https://kit.fontawesome.com/8a6f673640.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,7 +18,7 @@
         <div class="container">
             <nav>
                 <img src="images/MYlogo5.JPG" class="logo" alt="Eunice's logo"> <!-- mmm-->
-                <ul id="sidemenu">
+                <ul id="sidemenu" style="font-weight: bold;">
                     <li> <a href="#header">Home</a> </li>
                     <li> <a href="#about">Summary</a> </li>
                     <li> <a href="#services">Services</a> </li>
@@ -28,9 +29,11 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"> </i> <!-- Hamburger Icon for menu-->
             </nav>
             <div class="header-text">
-                <h1>Data Scientist || Machine Learning Engineer</h1>
-                <p>Greetings! I am <span>Eunice Muriithi</span> a data enthusiast who loves transforming raw data into powerful insights!  
-                    Over the years, I have built AI models, predicted trends, and tackled complex problems, always striving to create real impact.  
+                <h1 style="color: black; font-family: 'Times New Roman', Times, serif;">
+                    Data Scientist || Machine Learning Engineer
+                </h1>
+        
+                <p>Greetings! I am <b style="color: black;">Eunice Wangechi Muriithi</b> a data enthusiast and I love transforming raw data into powerful insights!  
                     I am always ready to take on new challenges and turn bold ideas into reality!</p>
             </div>
         </div>
@@ -43,34 +46,47 @@
                     <img src="images/Eunice-dp-specs.JPG" size="" alt="my photo">
                 </div>
                 <div class="about-col-2">
-                    <h2 class="sub-title"> Professional Summary</h2>
-                    <p>
+                    <h2 class="sub-title"> About Me</h2>
+                    <p style="color: black;">
                         I am a highly skilled Data Scientist and Machine Learning Engineer with expertise in AI, 
                         geospatial analytics, and predictive modeling across various industries. I specialize in 
                         developing and deploying ML models using PyTorch, Scikit-learn, and Transformers, with a focus on 
                         geospatial analysis, NLP, computer vision, and time-series forecasting. I manage the entire ML 
                         pipeline, ensuring scalable AI solutions by integrating MLOps and cloud platforms like AWS and Heroku, 
-                        utilizing Docker and Kubernetes. A strong problem solver, I excel at collaborating with cross-functional teams to 
+                        utilizing Docker and Kubernetes. As a strong problem solver, I excel at collaborating with cross-functional teams to 
                         translate complex business challenges into AI-driven insights.
+
+
                     </p>
-                    <div class="tab-titles">
+                    <div class="tab-titles" style="color: black;">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('my_certs')">My Certifications</p>
                     </div>
                     <!--content For the skills part below-->
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            </li>
-                            <li><span>Data Science</span> <br> I am a skilled data Scientist specializing in AI, machine learning, and predictive modeling, with expertise in NLP, computer vision, and geospatial analytics.
-                                Proficient in Python, SQL, and AWS, I develop and deploy scalable AI solutions using PyTorch, TensorFlow, and Scikit-learn. 
-                                I have applied AI-driven innovation across sustainable industries, leveraging big data, automation, and MLOps for business impact.</li>
-                        </ul>
+                        <div class="skills-container">
+                            <span class="skill">Python</span>
+                            <span class="skill">SQL</span>
+                            <span class="skill">AI Software Integration</span>
+                            <span class="skill">API Development</span>
+                            <span class="skill">Data Analysis</span>
+                            <span class="skill">Computer Vision</span>
+                            <span class="skill">Natural Language Processing (NLP's)</span>
+                            <span class="skill">Machine Learning & AI</span>
+                            <span class="skill">Data Visualization</span>
+                            <span class="skill">Big Data & Cloud Technologies</span>
+                            <span class="skill">Large Language Model (LLM's)</span>
+                            <span class="skill">Model Deployment & MLOps</span>
+                            <span class="skill">Neural Network's</span> 
+                            <span class="skill">Version control</span>       
+                        </div>
                     </div>
-
+                    
                     <!--content For the Experience part below-->
                     <div class="tab-contents" id="experience">
-                        <ul>
+                        <ul style="color: black;">
                             <li><span> <b>January 2024- Present</span> <br> Competitive Data Scientist and Machine Learning Engineer at Zindi</b>
                             </li>
                             <p>
@@ -88,49 +104,49 @@
                             <li><span><b>September 2024- January 2025</span> <br> Machine Learning Engineer at Invisible Technologies</b>
                             </li>
                             <p>
-                                <li>🚀Improved annotation efficiency by 40% through the implementation of automated data labeling pipelines, 
+                                <li>❄ Improved annotation efficiency by 40% through the implementation of automated data labeling pipelines, 
                                     enhancing training data quality for AI models.</li>
-                                <li>🚀Built predictive models, enhancing forecasting accuracy by 25% for decision-making</li>
-                                <li>🚀Trained NLP models, improving text classification accuracy by 15% for AI automation
+                                <li>❄ Built predictive models, enhancing forecasting accuracy by 25% for decision-making</li>
+                                <li>❄ Trained NLP models, improving text classification accuracy by 15% for AI automation
                                 </li>
-                                <li>🚀Collaborated with cross-functional teams to streamline AI workflows, 
+                                <li>❄ Collaborated with cross-functional teams to streamline AI workflows, 
                                     improving overall project delivery efficiency.</li>
                             </p>
 
                             <li><span><b>August 2024- October 2024</span> <br> Data Analysis Tutor(python) at Lux Academy</b>
                             </li>
                             <p>
-                                <li>🚀Trained 120+ students in Python for data analysis, machine learning, and visualization, achieving a 90% course completion rate..</li>
-                                <li>🚀Designed coding challenges and assessments that led to a 95% improvement in Python proficiency scores post-training.</li>
-                                <li>🚀Led interactive workshops on data wrangling, feature engineering, and exploratory data analysis, ensuring hands-on mastery.</li>
-                                <li>🚀Guided 120+ learners through real-world projects, with 80% successfully applying their skills in jobs or career advancements.</li>
+                                <li>❄ Trained 120+ students in Python for data analysis, machine learning, and visualization, achieving a 90% course completion rate..</li>
+                                <li>❄Designed coding challenges and assessments that led to a 95% improvement in Python proficiency scores post-training.</li>
+                                <li>❄Led interactive workshops on data wrangling, feature engineering, and exploratory data analysis, ensuring hands-on mastery.</li>
+                                <li>❄Guided 120+ learners through real-world projects, with 80% successfully applying their skills in jobs or career advancements.</li>
                             </p>
 
                             <li><span><b>June 2024-July 2024</span> <br> Machine Learning Engineer Intern at CodSoft</b> </li>
                             <p>
-                                <li>🧿 Developed predictive models, improving market trend forecasting
+                                <li>❄ Developed predictive models, improving market trend forecasting
                                     by 30% and increasing financial performance by 12%</li>
-                                <li>🧿  Improved fraud detection models with data preprocessing and feature engineering in Python, significantly enhancing detection
+                                <li>❄ Improved fraud detection models with data preprocessing and feature engineering in Python, significantly enhancing detection
                                     accuracy by uncovering fraud trends through visualizations.</li>
-                                <li>🧿 Developed credit scorecards using logistic regression, XGBoost, and LightGBM, increasing prediction accuracy by 25%.</li>
-                                <li>🧿 Conducted various code reviews and testing to ensure high-quality deliverables.</li>
+                                <li>❄ Developed credit scorecards using logistic regression, XGBoost, and LightGBM, increasing prediction accuracy by 25%.</li>
+                                <li>❄ Conducted various code reviews and testing to ensure high-quality deliverables.</li>
 
                             </p>
 
                             <li><span> <b>May 2023 - August 2023</span> <br> ICT Support Intern at Jomo Kenyatta International Airport </b> </li>
                             <p>
                             <ul>
-                                <li>⭕ Managed ICT support services for over 200 users, troubleshooting and resolving technical issues to ensure smooth
+                                <li>❄ Managed ICT support services for over 200 users, troubleshooting and resolving technical issues to ensure smooth
                                     operations.
                                     </li>
                                 <li>
-                                    ⭕ Ensured uninterrupted Wi-Fi and LAN connectivity for over 10,000
+                                    ❄ Ensured uninterrupted Wi-Fi and LAN connectivity for over 10,000
                                     passengers daily, optimizing network performance and reducing
                                     downtime by 30%.</li>
-                                <li>⭕ Administered Flight Information System Display (FIDS) at JKIA, ensuring
+                                <li>❄ Administered Flight Information System Display (FIDS) at JKIA, ensuring
                                     seamless information flow across various points
                                     .</li>
-                                <li>⭕Provided on-site and remote support, handling 50+ IT requests per week,
+                                <li>❄Provided on-site and remote support, handling 50+ IT requests per week,
                                     significantly improving operational efficiency across all airport
                                     departments.</li>
                             </ul>
@@ -140,12 +156,32 @@
 
                     <!--content For the Education part below-->
                     <div class="tab-contents" id="education">
-                        <ul>
+                        <ul style="color: black;">
                             <li><span> Jan 2024 - June 2024<span> <br> BootCamp in Data Science and Artificial Intelligence, from Ngeni Labs.
                             <li><span>Sep 2019 - Oct 2023</span> <br> Bachelor's Degree in Business Information Technology, from Multimedia
                                 University of Kenya.</li>
                             <li><span>2015 - 2018</span> <br> Attained the High School Diploma
                                 (KCSE), Mutira Girls High School</li>
+
+                        </ul>
+                    </div>
+
+                    <!--content For the other_certs part below-->
+                    <div class="tab-contents" id="my_certs">
+                        <ul style="color: black;">
+                            <li><span>My Cerfications</span> <br></li>
+                            <li>📜  Data Science with Python -<a
+                                    href="https://drive.google.com/file/d/1aFL-Yd8kwRBXKeNVIUSS8PBBggIVCGFg/view?usp=drive_link"
+                                    target="_blank">Kaggle </a></li>
+                            <li>📜  Introduction to Machine Learning - <a
+                                    href="https://drive.google.com/file/d/1ur259DDH358mwfK6VMh-qJOrsIztxuF3/view?usp=drive_link"
+                                    target="_blank">Kaggle </a></li>
+                            <li>🏆  Certified Machine Learning Engineer- <a
+                                    href="https://drive.google.com/file/d/1o9rkL2ARCQaqXgeTD4D2fsg5VFHevUKs/view?usp=sharing"
+                                    target="_blank">Micro1 </a></li>
+                            <li>🏆 Hackathon winner - <a
+                                    href="https://drive.google.com/file/d/1_Mi-Puvoaaxs2qSY8KB9Gb0G1sksSpVl/view?usp=drive_link"
+                                    target="_blank">Girlcode SouthAfrica  </a></li>
 
                         </ul>
                     </div>
@@ -203,7 +239,7 @@
                         <img src="images/linkedin.png">
                         <div class="layer">
                             <h3>Linkedin Post-Pro</h3>
-                            <p>
+                            <p style="color:white ;">
                                 Designed and developed a platform to generate professional LinkedIn posts in English and Swahili fostering networking
                                 and knowledge-sharing across diverse communities. This tool helps users craft engaging posts on various topics, 
                                 ensuring linguistic inclusivity and improving LinkedIn engagement.
@@ -222,7 +258,7 @@
                         <img src="images/tanzania.png" />
                         <div class="layer">
                             <h3>Tanzania Tourism Trend Prediction</h3>
-                            <p>
+                            <p style="color:white ;">
                                 Developed a machine learning model to predict tourist spending in Tanzania, 
                                 aiding tour operators and the Tanzania Tourism Board in providing cost estimates for travelers.
                             </p>
@@ -238,7 +274,7 @@
                         <img src="images/myjobmag.png" />
                         <div class="layer">
                             <h3>MyJobMag Kenya Web_scrapping Job Listings</h3>
-                            <p>
+                            <p style="color:white ;">
                                 This project is a web scraper that extracts job postings from online boards
                                 and sends automated email alerts, streamlining job searches.
                             </p>
@@ -254,7 +290,8 @@
                         <img src="images/agrismart-f.png" />
                         <div class="layer">
                             <h3>AgriSmart Project</h3>
-                            <p> This is an AI driven agricultural solution that provides farmers with
+                            <p style="color:white ;"> 
+                                This is an AI driven agricultural solution that provides farmers with
                                 data-driven insights to improve crop yields, optimize resource use, and enhance sustainability. 
                                 By leveraging machine learning, it offers tailored recommendations for better farm management and productivity.</p>
                             <a href="https://github.com/wangechi01-a/AgriSmart" 
@@ -269,7 +306,8 @@
                         <img src="images/pdf-bot.png" />
                         <div class="layer">
                             <h3>Ask Your Pdf</h3>
-                            <p>Developed a chatbot that allows users to query PDF documents using natural language, 
+                            <p style="color:white ;">
+                                Developed a chatbot that allows users to query PDF documents using natural language, 
                                 instantly retrieving relevant information and summaries from your document.</p>
                             <a href="https://github.com/wangechi01-a/Ask-Your-Pdf"
                                 target="_blank">
@@ -282,7 +320,8 @@
                         <img src="images/medical-bot.png" />
                         <div class="layer">
                             <h3>Medical Chatbot</h3>
-                            <p>This is chatbot that answers general medical questions, 
+                            <p style="color:white ;">
+                                This is chatbot that answers general medical questions, 
                                 providing users with quick, reliable health information based on trusted medical sources.</p> 
                               
                             <a href="https://github.com/wangechi01-a/Medical-Chatbot" target="_blank">
@@ -299,7 +338,7 @@
                             <h3>
                                 AirQo-African-Air-Quality 
                             </h3>
-                            <p>
+                            <p style="color:white ;">
                                 This project uses machine learning to estimate PM2.5 levels from satellite data, 
                                 improving air quality predictions across African cities. By integrating satellite and ground 
                                 sensor data, it enhances monitoring, supports public health, and informs policy decisions.
@@ -316,7 +355,7 @@
                         <img src="images/warehouse.png" />
                         <div class="layer">
                             <h3>Real-Time Vendor Tracking</h3>
-                            <p>
+                            <p style="color:white ;">
                                 This project is a system for tracking vendor products in a warehouse using object detection and video analytics. 
                                 It monitors items like barrels, pallets, and forklifts in real time, improving inventory management, reducing errors, 
                                 and optimizing logistics.
@@ -497,8 +536,6 @@
                         <a href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                         <a href="https://discordapp.com/users/961452033288843284" target="_blank"><i
                                 class="fa-brands fa-discord"></i> </a>
-                        <a href="https://www.tiktok.com/@codewith_wangeshie?is_from_webapp=1&sender_device=pc"
-                            target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                         </p>
                     </div>
                     <!-- <a href="images/@Eunice Muriithi Resume.pdf" download class="bn5"> <i
@@ -529,7 +566,7 @@
 
     <!--copyright section starts below-->
     <div class="copyright">
-        <p>Copyright&copy;Eunice Muriithi</p>
+        <p style="color: black;">Copyright&copy;Eunice Muriithi</p>
     </div>
 
 

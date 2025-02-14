@@ -45,19 +45,34 @@
  //--contact for javascript starts below-->
  //--Got some help from this github account on the code below: https://github.com/jamiewilson/form-to-google-sheets,, also he gave ideas and script to enter in google sheets extensions web app feature-->
  
- const scriptURL = 'https://script.google.com/macros/s/AKfycbxfpn6xu-QNJE1V1kCNpJw3tSwJrKKV-QZWU4Jjo7q-AGf7OIc7XVbKRHCMGSmN03sZ/exec'
- const form = document.forms['submit-to-google-sheet']
- const msg = document.getElementById("msg")
- 
- form.addEventListener('submit', e => {
-     e.preventDefault()
-     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-         .then(response => {
-             msg.innerHTML = "Message sent Successfully."
-             setTimeout(function () {
-                 msg.innerHTML = ""
-             }, 5000)
-             form.reset()
-         })
-         .catch(error => console.error('Error!', error.message))
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbww0Oxj8TAWm1pd9etVFUjnbo-UnsLbpZbbR8ms1-i_OIVoP8A3-Atqv5lOMOV2UyCQwA/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", (e) => {
+ e.preventDefault();
+ fetch(scriptURL, {
+   method: "POST",
+   body: new FormData(form),
  })
+   .then((response) => response.json()) // Parse JSON response
+   .then((data) => {
+     if (data.status === "success") {
+       msg.innerHTML = "Email sent successfully!";
+       console.log("Success:", data.message);
+     } else {
+       throw new Error(data.message);
+     }
+     setTimeout(() => {
+       msg.innerHTML = "";
+     }, 5000);
+     form.reset();
+   })
+   .catch((error) => {
+     msg.innerHTML = "Error sending email!";
+     console.error("Error!", error.message);
+   });
+});
+
+ 

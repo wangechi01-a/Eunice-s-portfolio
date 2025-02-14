@@ -12,9 +12,35 @@ html{
 } /*to make the website scroll smoothly when someone clicks*/
 
 body{
-    background: #000000;
-    color: #ffffff;
+    background: #fff;
+    color: #000;
+}
 
+#sidemenu {
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+}
+
+#sidemenu li {
+    margin: 10px 0; /* Adds vertical spacing */
+}
+
+#sidemenu a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    transition: background 0.3s;
+    margin-bottom: 15px; /* Adds spacing between buttons */
+}
+
+#sidemenu a:hover {
+    background-color: #333; /* Darker shade on hover */
 }
 /* Header Styling */
 #header {
@@ -73,7 +99,7 @@ nav ul li {
 
 /* Navigation Links Text Styling */
 nav ul li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -230,46 +256,50 @@ nav .fa-solid{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size: 60px;
-    font-weight:600;
-    color: #ffffff;
+    font-size: 40px;
+    font-weight:400;
+    color: #000;
 }
-.tab-titles{
+.tab-titles {
     display: flex;
-    margin: 20px 0 20px;
-    color: #1ccfa5;
-    font-weight: 700;
-    background-color: black;
-    font-family:'Times New Roman', Times, serif, monospace;
+    gap: 10px;
 }
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor:pointer;
-    position: relative;
-    background-color: rgb(61, 53, 53);
-
+.tab-links {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+.tab-links:hover {
+    background-color: black;
 }
 .tab-links::after{
     content:'';
     width: 0;
     height:3px;
-    background: #11d8d8;
+    background: #000;
     position: absolute;
     left:0;
     bottom: -8px;
     transition: 0.5s;
 }
+.active-link {
+    background-color: hwb(136 24% 35%); /* Darker green for the active tab */
+}
 .tab-links.active-link::after{
     width:50%;
+
 }
 .tab-contents ul li{
 list-style: none;
 margin:10px 0;
 }
 .tab-contents ul li span{
-    color: #1ccfa5;
+    color: #000;
     font-size: 14px;
     font-weight: 700;
 }
@@ -279,6 +309,32 @@ margin:10px 0;
 .tab-contents.active-tab{
     display: block;
 }
+
+/* skills start here */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-container {
+    padding-top: 20px;
+}
+
+.skill {
+    background-color: #000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.skill.green {
+    background-color: green;
+}
+
 
 /* ....... Styling the Services section starts below.........*/
 #services{
@@ -351,12 +407,30 @@ margin:10px 0;
     display: block;
     transition: transform 0.5s;
 
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.technologies span {
+    background: #E0E0E0; /* Light grey */
+    color: #333; /* Dark text */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
 }
 /* Layer - Adjusting to appear below the image */
 .layer {
     width: 100%;
     height: 100%;
-    background: #1ccfa5; /* Adjust color as needed */
+    background: #000000; /* Adjust color as needed */
     padding: 5px;
     box-sizing: border-box;
     text-align: center;
@@ -367,7 +441,7 @@ margin:10px 0;
 .layer h3{
     font-weight: 700;
     margin-bottom: 5px;
-    color:#000;
+    color:#fff;
     font-family:'Arial Narrow Bold', sans-serif;
 }
 .layer a{
@@ -441,7 +515,7 @@ transform: scale(1.1);
 #testimonials-section{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    background: #1ccfa5;   /*initial color was this: linear-gradient(to right, hsl(186, 98%, 37%), hsl(170, 100%, 40%)); 
+    background: #fff;   /*initial color was this: linear-gradient(to right, hsl(186, 98%, 37%), hsl(170, 100%, 40%)); 
   hsl= hue saturation lightness */
     padding: 0%;
 }
@@ -604,19 +678,19 @@ line-height: 1.2;
 
 }
 .contact-right p{
-    background: #10d9c8;
+    background: #fff;
     font-weight: 600;
     color: #000;
 }
 
 .connectWithMe{
-    background: #10d9c8;
+    background: #fff;
     font-weight: 600;
     color: #000;
 }
 /*styling the icons*/
 .contact-left p i{
-    color:#00fff7;
+    color:#000;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -628,7 +702,7 @@ line-height: 1.2;
 .social-icons a{ 
     margin-right: 15px;
     font-size: 30px;
-    color: #65d0e1;
+    color: #000;
     display: inline-block;
     text-decoration: none;
     transition: transform 0.5s;
@@ -738,10 +812,10 @@ form input, form textarea{
 width: 100%;
 border: 0;
 outline: none;
-background: #262626;
+background: #000;
 padding: 15px;
 margin: 15px 0;
-color: #ffffff;
+color: #fff;
 font-size: 18px;
 border-radius: 15px;
 
@@ -752,7 +826,7 @@ form .submitbtn{
    margin-top: 20px;
    cursor: pointer;
    border-radius: 20px;
-   background-color: #20fbd6;
+   background-color: #fff;
    max-width: fit-content;
 }
 
@@ -762,7 +836,7 @@ form .submitbtn{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #1ccfa5;
+    background: #fff;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -813,7 +887,7 @@ form .submitbtn{
     }
 }
 #msg{
-    color:green;
+    color:black;
     margin-top: 5px;
     display: block;
 }
