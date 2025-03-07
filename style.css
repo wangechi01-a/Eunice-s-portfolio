@@ -283,7 +283,7 @@ nav .fa-solid{
     content:'';
     width: 0;
     height:3px;
-    background: #000;
+    /* background: #000; */
     position: absolute;
     left:0;
     bottom: -8px;
